@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale</title>
+    <!-- Daisy UI and Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Work Sans font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome icons  -->
+    <script
+      src="https://kit.fontawesome.com/7536ca6a43.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <section
+        id="hero-section"
+        class="w-11/12 sm:w-4/5 mx-auto grid gap-2 lg:gap-10 md:grid-cols-2 py-12 items-center"
+      >
+        <!-- hero text section  -->
+        <div class="text-center order-2 md:order-1">
+          <h3 class="text-xl lg:text-3xl font-medium">---SALE FEVER---</h3>
+          <h1 class="text-3xl lg:text-5xl font-bold my-7 md:mt-11 md:mb-14">
+            Purchase TK 200 or<br />above & get <span>20% off</span>
+          </h1>
+          <p class="text-xl lg:text-2xl font-medium">
+            Use Promo Code
+            <button
+              class="btn rounded-md"
+              onclick="couponPasted()"
+              title="Clik to apply the code"
+            >
+              SELL200
+            </button>
+          </p>
+        </div>
+        <!-- hero section image  -->
+        <div class="order-1 md:order-2 mb-8 md:mb-0">
+          <div class="w-full">
+            <img
+              class="w-full"
+              src="images/Summer.png"
+              alt="summer-sale-banner-image"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- main body starts  -->
+    <main>
+      <section
+        id="main-body-wrapper"
+        class="w-4/5 mx-auto py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+      >
+        <!-- product category starts  -->
+        <div
+          id="product-category-wrapper"
+          class="md:col-span-1 lg:col-span-2 xl:col-span-3"
+        >
+          <!-- Kitchenware starts  -->
+          <div id="category-kitchenware" class="categories">
+            <h1 class="text-4xl font-semibold my-8 text-center md:text-left">
+              Kitchenware
+            </h1>
+            <div
+              class="products-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5"
+            >
+              <!-- product-1  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod1.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">K. Accessories</h2>
+                  <p class="price text-xl">50.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product-2  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod2.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Chopping Board</h2>
+                  <p class="price text-xl">25.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product-3  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod3.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Home Cooker</h2>
+                  <p class="price text-xl">49.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sportsware starts  -->
+          <div id="category-sportsware" class="categories">
+            <h1 class="text-4xl font-semibold my-8 text-center md:text-left">
+              Sportsware
+            </h1>
+            <div
+              class="products-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5"
+            >
+              <!-- product-1  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod4.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Sports Back Caps</h2>
+                  <p class="price text-xl">49.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product-2  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod5.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Full Jersey Set</h2>
+                  <p class="price text-xl">69.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product-3  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod6.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Sports Kades</h2>
+                  <p class="price text-xl">159.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Furniture starts  -->
+          <div id="category-furniture" class="categories">
+            <h1 class="text-4xl font-semibold my-8 text-center md:text-left">
+              Furniture
+            </h1>
+            <div
+              class="products-container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5"
+            >
+              <!-- product-1  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod7.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Single Relax Chair</h2>
+                  <p class="price text-xl">185.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product-2  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod8.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Children's Chair</h2>
+                  <p class="price text-xl">99.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- product-3  -->
+              <div class="products card bg-base-100 p-5 pb-4">
+                <figure class="px-7 py-10 rounded-xl">
+                  <img
+                    src="images/prod9.png"
+                    alt="Kitchenware"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center pb-0">
+                  <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <h2 class="card-title text-xl">Flexible Sofa</h2>
+                  <p class="price text-xl">349.00 €</p>
+                  <div class="card-actions">
+                    <button class="btn" onclick="addToCart(this)">
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- purchase and coupon starts   -->
+        <div id="purchase-coupon">
+          <!-- coupon starts  -->
+          <div id="coupon" class="p-7 bg-base-100 rounded-xl">
+            <h2 class="text-xl font-semibold">Have coupon?</h2>
+            <div class="coupon-form mt-4">
+              <input
+                id="discount-input"
+                class="w-3/5 rounded-md"
+                type="text"
+                placeholder="Coupon code"
+              />
+              <button
+                id="discount-button"
+                onclick="applyDiscount()"
+                disabled
+                title="Spend at least 200 € and get discount!!!"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <!-- purchased-products-and-price starts  -->
+          <div
+            id="purchased-products-and-price"
+            class="p-7 pb-14 bg-base-100 rounded-xl mt-4"
+          >
+            <div id="purchased-products" class="pb-5 pl-6">
+              <ol class="list-decimal"></ol>
+            </div>
+            <div id="price-details" class="py-4">
+              <p class="text-xl font-semibold pb-1">
+                Total price :
+                <span id="total-price" class="font-normal">0.00</span
+                ><span class="font-normal"> €</span>
+              </p>
+              <p class="text-xl font-semibold pb-1">
+                Discount :
+                <span id="discount" class="font-normal">0.00</span
+                ><span class="font-normal"> €</span>
+              </p>
+              <p class="text-xl font-semibold pb-1">
+                Total :
+                <span id="after-discount" class="font-normal">0.00</span
+                ><span class="font-normal"> €</span>
+              </p>
+            </div>
+          </div>
+          <div id="make-purchase-btn" class="w-4/5 mx-auto -mt-6">
+            <button
+              id="make-purchase-button"
+              class="w-full text-xl rounded-lg"
+              onclick="my_modal_4.showModal()"
+              disabled
+            >
+              Make Purchase
+            </button>
+            <!-- Modal code starts -->
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box w-3/4 md:w-1/2 max-w-2xl">
+                <div
+                  id="modal-body"
+                  class="grid grid-cols-1 place-items-center"
+                >
+                  <div>
+                    <img src="images/congo.png" alt="Purchase Successful" />
+                  </div>
+                  <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold pt-4">
+                    Congratulations
+                  </h1>
+                  <p class="text-base sm:text-xl pt-4">
+                    You purchased the products
+                  </p>
+                </div>
+                <div class="modal-action">
+                  <!-- if there is a button, it will close the modal -->
+                  <button
+                    id="goto-home"
+                    class="w-3/5 md:w-2/5 text-xl rounded-lg mx-auto"
+                    onclick="gotoHome()"
+                  >
+                    Go to Home
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/purchase.js"></script>
+  </body>
+</html>

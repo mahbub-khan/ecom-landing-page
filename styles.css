@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+header {
+  background-color: #f9f6e2;
+  color: #111;
+}
+
+#hero-section span {
+  color: #e527b2;
+}
+
+#hero-section .btn {
+  background-color: #e527b2 !important;
+  color: #fff;
+  font-size: 18px;
+}
+
+main {
+  background-color: #f8f8f8;
+}
+
+.categories .products figure {
+  background-color: rgba(17, 17, 17, 0.05);
+}
+
+.rating {
+  color: #ffc107;
+}
+.card-title {
+  color: #111;
+}
+.price {
+  color: rgba(17, 17, 17, 0.5);
+}
+
+.card-actions .btn {
+  background-color: #e527b2 !important;
+  color: #fff;
+  font-size: 14px;
+}
+#purchase-coupon {
+  margin-top: 107px;
+}
+
+@media (max-width: 767px) {
+  #purchase-coupon {
+    margin-top: 20px;
+  }
+}
+.coupon-form input {
+  border: 1px solid rgba(17, 17, 17, 0.15);
+  padding: 5px;
+}
+.coupon-form button {
+  background-color: #e527b2 !important;
+  color: #fff;
+  padding: 6px 15px 6px 15px;
+  margin-left: -10px;
+  border-radius: 0 6px 6px 0;
+}
+
+#price-details {
+  border-top: 1px solid rgba(17, 17, 17, 0.15);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.15);
+}
+
+#price-details > p > span {
+  color: rgba(17, 17, 17, 0.5);
+}
+
+#make-purchase-btn button {
+  background-color: #e527b2 !important;
+  color: #fff;
+  padding: 10px 0px;
+}
+
+/* modal styles  */
+#modal-body p {
+  color: rgba(17, 17, 17, 0.5);
+}
+
+#discount-button:disabled,
+#make-purchase-button:disabled {
+  background-color: #e27bc6 !important;
+  cursor: not-allowed;
+}
